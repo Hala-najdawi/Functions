@@ -440,11 +440,11 @@ function randomBetweenNumbers (n1,n2)
 	else
 	{
 		min = n1;
-		max = n2 - min +1;
+		max = n2 - min ;
 		
 	}
 
-	return Math.floor(Math.random() * max)+ min;
+	return Math.random() * max + min;
 
 }
 // randomBetweenNumbers(5,8);
@@ -541,6 +541,7 @@ function resetCounter ()
 
 }
 resetCounter();
+console.log(counter());
 console.log(counter());
 console.log(counter());
 resetCounter();
